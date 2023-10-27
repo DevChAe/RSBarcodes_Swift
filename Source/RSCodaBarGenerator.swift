@@ -23,9 +23,9 @@ public enum RSCodaBarSpecialCharacterType {
         case .b:
             return 17
         case .c:
-            return 19
+            return 18
         case .d:
-            return 20
+            return 19
         }
     }
 }
@@ -69,7 +69,7 @@ open class RSCodaBarGenerator: RSAbstractCodeGenerator {
     private let initialCharactorType: RSCodaBarSpecialCharacterType
     private let terminatorCharactorType: RSCodaBarSpecialCharacterType
     
-    init(
+    public init(
         initialCharactorType: RSCodaBarSpecialCharacterType = .auto,
         terminatorCharactorType: RSCodaBarSpecialCharacterType = .auto
     ) {
